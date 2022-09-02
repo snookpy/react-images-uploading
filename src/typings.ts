@@ -16,6 +16,7 @@ export interface ImageUploadingPropsType {
   maxNumber?: number;
   acceptType?: Array<string>;
   maxFileSize?: number;
+  minFileSize?: number;
   resolutionWidth?: number;
   resolutionHeight?: number;
   resolutionType?: ResolutionType;
@@ -44,6 +45,7 @@ export interface ExportInterface {
 
 export type ErrorsType = {
   maxFileSize?: boolean;
+  minFileSize?: boolean;
   maxNumber?: boolean;
   acceptType?: boolean;
   resolution?: boolean;

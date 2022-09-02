@@ -24,6 +24,7 @@ export const App = () => {
         onError={onError}
         maxNumber={maxNumber}
         dataURLKey="data_url"
+        minFileSize={153600}
       >
         {({
           imageList,
@@ -72,6 +73,9 @@ export const App = () => {
                 )}
                 {errors.maxFileSize && (
                   <span>Selected file size exceed maxFileSize</span>
+                )}
+                {errors.minFileSize && (
+                  <span>Selected file size min minFileSize</span>
                 )}
                 {errors.resolution && (
                   <span>

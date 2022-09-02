@@ -24,6 +24,7 @@ const ReactImageUploading: React.FC<ImageUploadingPropsType> = ({
   maxNumber = INIT_MAX_NUMBER,
   acceptType,
   maxFileSize,
+  minFileSize,
   resolutionWidth,
   resolutionHeight,
   resolutionType,
@@ -70,6 +71,7 @@ const ReactImageUploading: React.FC<ImageUploadingPropsType> = ({
     const errorsValidation = await getErrorValidation({
       fileList,
       maxFileSize,
+      minFileSize,
       maxNumber,
       acceptType,
       keyUpdate,
